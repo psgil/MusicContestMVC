@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MusicContestMVC.Models.Judge>
+
+@{
+    ViewData["Title"] = "viewJudge";
+}
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+        <div class="col-md-4">
+
+            <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHF-35HJg3fWtow5tuhyUG9YyCiQxKQqeFGQ&usqp=CAU" class="img-thumbnail" />
+            <h3>@Html.DisplayFor(modelItem => item.Details)</h3>
+        </div>
+        }
+
+        </div>
+
+</div>
+      

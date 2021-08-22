@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MusicContestMVC.Models.Competition>
+
+@{
+    ViewData["Title"] = "CompetitionDate";
+}
+
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <img src="https://static.toiimg.com/thumb/msid-75979642,imgsize-858898,width-1070,height-580,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/75979642.jpg" class="img-thumbnail"/>
+                <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
+                <h3>@Html.DisplayFor(modelItem => item.dTime)</h3>
+            </div>
+        }
+
+        </div>
+
+</div>
+       
